@@ -1,0 +1,124 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;500;700&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  .wrap{font-family:'Syne',sans-serif;padding:2rem 1.5rem;max-width:680px}
+  .badge-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.5rem}
+  .badge{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;padding:4px 10px;border-radius:4px;letter-spacing:0.03em}
+  .b-mongo{background:#EAF3DE;color:#3B6D11}
+  .b-express{background:#F1EFE8;color:#5F5E5A}
+  .b-react{background:#E6F1FB;color:#185FA5}
+  .b-node{background:#EAF3DE;color:#27500A}
+  .b-jwt{background:#FAEEDA;color:#854F0B}
+  .b-multer{background:#FBEAF0;color:#993556}
+  .b-rest{background:#EEEDFE;color:#534AB7}
+  .b-bcrypt{background:#FAECE7;color:#993C1D}
+  .hero{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:0.5px solid var(--color-border-tertiary)}
+  .hero-label{font-family:'DM Mono',monospace;font-size:11px;color:var(--color-text-secondary);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem}
+  .hero-title{font-family:'DM Serif Display',serif;font-size:26px;color:var(--color-text-primary);line-height:1.2;margin-bottom:0.75rem}
+  .hero-desc{font-size:14px;color:var(--color-text-secondary);line-height:1.7;max-width:560px}
+  .sections{display:grid;gap:1.25rem}
+  .section{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem}
+  .section-head{display:flex;align-items:center;gap:10px;margin-bottom:1rem}
+  .section-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+  .si-blue{background:#E6F1FB;color:#185FA5}
+  .si-teal{background:#E1F5EE;color:#0F6E56}
+  .si-amber{background:#FAEEDA;color:#854F0B}
+  .si-purple{background:#EEEDFE;color:#534AB7}
+  .si-coral{background:#FAECE7;color:#993C1D}
+  .section-title{font-size:13px;font-weight:500;color:var(--color-text-primary);letter-spacing:0.02em}
+  .feature-list{display:grid;gap:8px}
+  .feature{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--color-text-secondary);line-height:1.5}
+  .feat-dot{width:5px;height:5px;border-radius:50%;background:#AFA9EC;margin-top:6px;flex-shrink:0}
+  .feat-dot.teal{background:#5DCAA5}
+  .feat-dot.amber{background:#EF9F27}
+  .feat-dot.coral{background:#F0997B}
+  .feat-dot.blue{background:#85B7EB}
+  .highlight{color:var(--color-text-primary);font-weight:500}
+  .arch-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px;margin-top:4px}
+  .arch-box{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 8px;text-align:center}
+  .arch-box-icon{font-size:18px;margin-bottom:4px}
+  .arch-box-label{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;color:var(--color-text-secondary);letter-spacing:0.04em}
+  .arch-box-name{font-size:11px;font-weight:500;color:var(--color-text-primary);margin-top:2px}
+  .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px}
+  .metric{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 12px;text-align:center}
+  .metric-num{font-family:'DM Serif Display',serif;font-size:22px;color:var(--color-text-primary);margin-bottom:2px}
+  .metric-label{font-size:11px;color:var(--color-text-secondary);line-height:1.4}
+</style>
+<div class="wrap">
+  <h2 class="sr-only" style="position:absolute;left:-9999px">College Notes Sharing Portal — project summary</h2>
+  <div class="hero">
+    <p class="hero-label">Full-Stack Project</p>
+    <h1 class="hero-title">College Notes<br>Sharing Portal</h1>
+    <p class="hero-desc">A secure, full-stack web application where students upload, search, and download peer notes — organized by subject, semester, and department.</p>
+  </div>
+  <div class="badge-row">
+    <span class="badge b-mongo">MongoDB</span>
+    <span class="badge b-express">Express.js</span>
+    <span class="badge b-react">React.js</span>
+    <span class="badge b-node">Node.js</span>
+    <span class="badge b-jwt">JWT Auth</span>
+    <span class="badge b-multer">Multer</span>
+    <span class="badge b-bcrypt">bcrypt</span>
+    <span class="badge b-rest">REST API</span>
+  </div>
+  <div class="sections">
+    <div class="section">
+      <div class="section-head">
+        <div class="section-icon si-blue"><i class="ti ti-stack-2" aria-hidden="true"></i></div>
+        <p class="section-title">Architecture overview</p>
+      </div>
+      <div class="arch-row">
+        <div class="arch-box"><div class="arch-box-icon" style="color:#185FA5"><i class="ti ti-layout" aria-hidden="true"></i></div><div class="arch-box-label">Frontend</div><div class="arch-box-name">React.js</div></div>
+        <div class="arch-box"><div class="arch-box-icon" style="color:#3B6D11"><i class="ti ti-server" aria-hidden="true"></i></div><div class="arch-box-label">Runtime</div><div class="arch-box-name">Node.js</div></div>
+        <div class="arch-box"><div class="arch-box-icon" style="color:#5F5E5A"><i class="ti ti-route" aria-hidden="true"></i></div><div class="arch-box-label">Framework</div><div class="arch-box-name">Express.js</div></div>
+        <div class="arch-box"><div class="arch-box-icon" style="color:#0F6E56"><i class="ti ti-database" aria-hidden="true"></i></div><div class="arch-box-label">Database</div><div class="arch-box-name">MongoDB</div></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-head">
+        <div class="section-icon si-coral"><i class="ti ti-lock" aria-hidden="true"></i></div>
+        <p class="section-title">Authentication & security</p>
+      </div>
+      <div class="feature-list">
+        <div class="feature"><div class="feat-dot coral"></div><span><span class="highlight">JWT tokens</span> — stateless session management for secure login/logout flows</span></div>
+        <div class="feature"><div class="feat-dot coral"></div><span><span class="highlight">bcrypt password hashing</span> — salted encryption protecting user credentials at rest</span></div>
+        <div class="feature"><div class="feat-dot coral"></div><span><span class="highlight">Protected routes</span> — middleware-guarded API endpoints requiring valid token headers</span></div>
+        <div class="feature"><div class="feat-dot coral"></div><span><span class="highlight">Registration & login</span> — full user lifecycle with input validation and error handling</span></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-head">
+        <div class="section-icon si-teal"><i class="ti ti-file-upload" aria-hidden="true"></i></div>
+        <p class="section-title">File management</p>
+      </div>
+      <div class="feature-list">
+        <div class="feature"><div class="feat-dot teal"></div><span><span class="highlight">Multer integration</span> — multipart/form-data middleware handling PDF uploads on the server</span></div>
+        <div class="feature"><div class="feat-dot teal"></div><span><span class="highlight">Metadata tagging</span> — notes stored with subject, semester, and department for structured retrieval</span></div>
+        <div class="feature"><div class="feat-dot teal"></div><span><span class="highlight">Download endpoint</span> — streaming PDF delivery via RESTful routes with access control</span></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-head">
+        <div class="section-icon si-purple"><i class="ti ti-search" aria-hidden="true"></i></div>
+        <p class="section-title">Search & discovery</p>
+      </div>
+      <div class="feature-list">
+        <div class="feature"><div class="feat-dot"></div><span>Filter notes by <span class="highlight">subject</span>, <span class="highlight">semester</span>, and <span class="highlight">department</span> — compound query support via MongoDB</span></div>
+        <div class="feature"><div class="feat-dot"></div><span>Responsive note cards listing uploader, date, and file size at a glance</span></div>
+        <div class="feature"><div class="feat-dot"></div><span>One-click download directly from search results — no extra navigation steps</span></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-head">
+        <div class="section-icon si-amber"><i class="ti ti-chart-bar" aria-hidden="true"></i></div>
+        <p class="section-title">Key skills demonstrated</p>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="metric-num">4</div><div class="metric-label">Core MERN layers integrated end-to-end</div></div>
+        <div class="metric"><div class="metric-num">REST</div><div class="metric-label">API design with CRUD endpoints</div></div>
+        <div class="metric"><div class="metric-num">JWT</div><div class="metric-label">Stateless auth implementation</div></div>
+      </div>
+    </div>
+  </div>
+</div>
